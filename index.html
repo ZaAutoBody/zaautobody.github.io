@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ZA Auto</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #111;
+      color: #fff;
+    }
+    header {
+      background: #c00000;
+      padding: 25px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+    }
+    .hero img {
+      width: 100%;
+      max-height: 350px;
+      object-fit: cover;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #ff4444;
+    }
+    .box {
+      background: #222;
+      padding: 12px;
+      margin: 8px 0;
+      border-radius: 6px;
+    }
+    .btn {
+      display: inline-block;
+      background: #ff4444;
+      color: white;
+      padding: 10px 18px;
+      margin: 8px 5px 0 0;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    iframe {
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      border: none;
+    }
+    .lang-btn {
+      background: #fff;
+      color: #000;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #000;
+    }
+  </style>
+
+  <script>
+    function setLanguage(lang) {
+      document.getElementById("en").style.display = lang === "en" ? "block" : "none";
+      document.getElementById("es").style.display = lang === "es" ? "block" : "none";
+    }
+  </script>
+
+</head>
+<body>
+
+<header>
+  <h1>ZA AUTO</h1>
+  <p>Auto Service • Tire • Body Shop</p>
+  <a class="btn" href="tel:16028808897">📞 Call Now</a>
+  <button class="btn lang-btn" onclick="setLanguage('en')">EN</button>
+  <button class="btn lang-btn" onclick="setLanguage('es')">ES</button>
+</header>
+
+<div class="hero">
+  <img src="shop.jpg" alt="ZA Auto Shop">
+</div>
+
+<section>
+
+<!-- ENGLISH -->
+<div id="en">
+
+  <h2>Our Services</h2>
+  <div class="box">✔ Tire Shop</div>
+  <div class="box">✔ Mechanic Services</div>
+  <div class="box">✔ Oil Change</div>
+  <div class="box">✔ Brakes</div>
+  <div class="box">✔ A/C Service</div>
+  <div class="box">✔ Alignment</div>
+  <div class="box">✔ Body Work (Collision Repair)</div>
+  <div class="box">✔ Professional Paint Jobs</div>
+
+  <h2>Location</h2>
+  <p>4002 N 33rd Ave<br>Phoenix, AZ 85017</p>
+
+  <iframe src="https://maps.google.com/maps?q=4002%20N%2033rd%20Ave%20Phoenix%20AZ&output=embed"></iframe>
+
+  <a class="btn" href="https://maps.google.com/?q=4002+N+33rd+Ave+Phoenix+AZ">📍 Directions</a>
+
+  <h2>Contact</h2>
+  <p>Phone: (602) 880-8897</p>
+  <a class="btn" href="tel:16028808897">Call Now</a>
+
+  <h2>Reviews</h2>
+  <a class="btn" href="https://www.google.com/search?q=ZA+Auto+Phoenix">⭐ See Google Reviews</a>
+
+  <h2>Hours</h2>
+  <p>Open Daily until 8 PM</p>
+
+</div>
+
+<!-- SPANISH -->
+<div id="es" style="display:none;">
+
+  <h2>Servicios</h2>
+  <div class="box">✔ Llantera</div>
+  <div class="box">✔ Mecánica General</div>
+  <div class="box">✔ Cambio de Aceite</div>
+  <div class="box">✔ Frenos</div>
+  <div class="box">✔ Aire Acondicionado</div>
+  <div class="box">✔ Alineación</div>
+  <div class="box">✔ Hojalatería</div>
+  <div class="box">✔ Pintura Profesional</div>
+
+  <h2>Ubicación</h2>
+  <p>4002 N 33rd Ave<br>Phoenix, AZ 85017</p>
+
+  <iframe src="https://maps.google.com/maps?q=4002%20N%2033rd%20Ave%20Phoenix%20AZ&output=embed"></iframe>
+
+  <a class="btn" href="https://maps.google.com/?q=4002+N+33rd+Ave+Phoenix+AZ">📍 Cómo llegar</a>
+
+  <h2>Contacto</h2>
+  <p>Teléfono: (602) 880-8897</p>
+  <a class="btn" href="tel:16028808897">Llamar</a>
+
+  <h2>Reseñas</h2>
+  <a class="btn" href="https://www.google.com/search?q=ZA+Auto+Phoenix">⭐ Ver reseñas</a>
+
+  <h2>Horario</h2>
+  <p>Abierto todos los días hasta las 8 PM</p>
+
+</div>
+
+</section>
+
+<footer>
+  <p>© ZA Auto</p>
+</footer>
+
+</body>
+</html>
